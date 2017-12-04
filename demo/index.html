@@ -1,6 +1,21 @@
 <!doctype html>
 <html>
   <head>
+    <custom-style>
+      <style>
+        /* Define a document-wide default-will not override a :host rule in */
+        html {
+          --icon-toggle-outline-color: red;
+          --iron-icon-width: 40px;
+          --iron-icon-height: 40px;
+        }
+        /* Override the value specified in demo-element */
+        demo-element {
+          --icon-toggle-pressed-color: blue;
+          --icon-toggle-color: purple;
+        }
+      </style>
+    </custom-style>
     <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
     <script>
       /*
